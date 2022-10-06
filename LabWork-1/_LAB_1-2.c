@@ -53,10 +53,10 @@ int main() {
 
     //--- X1, X2, N or delta output
     printf(".\n");
-    printf("X1=%.8lf,", X1);
-    printf(" X2=%.8lf,", X2);
-    printf(" N=%.0u,", N);
-    printf(" delta=%.8lf\n", delta);
+    printf("X1=%.9lf,", X1);
+    printf(" X2=%.9lf,", X2);
+    printf(" N=%u,", N);
+    printf(" delta=%.9lf\n", delta);
 
     //--- table header output
     printf("************************************************************\n");
@@ -69,7 +69,7 @@ int main() {
         Y=powl(X, 2)/1000-0.5*X-1000; // 6 variant expression
 
         printf("+------+-------------------------+-------------------------+\n");
-        printf("|%5.0d |%24.8lf |%24.8lf |\n", i+1, X, Y);
+        printf("|%5d |%24.9lf |%24.9lf |\n", i+1, X, Y);
 
         X+=delta; // increase X by delta
 
