@@ -20,7 +20,7 @@ int main() {
         }
     } while (variant !=1 && variant !=2);
 
-    //---
+    //--- X1, X2 input invitation
     printf("Enter start argument (X1): ");
     scanf("%lf", &X1);
 
@@ -33,20 +33,20 @@ int main() {
     //--- variant 1  (input: N - points amount)
     if (variant==1) {
         printf("Enter points amount (N>1): ");
-        scanf("%u", &N); // (N>1)
+        scanf("%u", &N); // (N>1), N input invitation
 
-        delta=S/(N-1); // (delta>0)
+        delta=S/(N-1); // (delta>0), delta calculation
     }
 
     //--- variant 2 (input: delta - argument's step change)
     else {
-        printf("Enter Argument's step change (delta>0): ");
+        printf("Enter Argument's step change (delta>0): "); // delta input invitation
         scanf("%lf", &delta);
 
-        N=1+S/delta; // N: points amount calculation (50)
+        N=1+S/delta; // N: points amount calculation (50), N calculation
     }
 
-    //--- X
+    //--- X assignment conditions
     if (X1<X2)
     X=X1;
     else X=X2;
