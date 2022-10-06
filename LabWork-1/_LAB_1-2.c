@@ -43,7 +43,7 @@ int main() {
         printf("Enter Argument's step change (delta>0): "); // delta input invitation
         scanf("%lf", &delta);
 
-        N=1+S/delta; // N: points amount calculation (50), N calculation
+        N=1+S/delta; // N: points amount calculation (50)
     }
 
     //--- X assignment conditions
