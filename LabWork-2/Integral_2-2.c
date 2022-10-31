@@ -174,9 +174,9 @@ int main() {
 //--- left rectangle
 double lt_rtn_r(double a, double b, int n) {
 
-//--- S = h*(E k(1, n-1) f(xk))
+//--- S = h*(E k(0, n-1) f(xk))
 
-    double x=0, s=0;
+    double x=a, s=0;
     double h=(b-a)/n;
 
 //---
@@ -194,11 +194,11 @@ double rt_rtn_r(double a, double b, int n) {
 
 //--- S = h*(E k(1, n) f(xk))
 
-    double x=0, s=0;
+    double x=a, s=0;
     double h=(b-a)/n;
 
 //---
-    for (int i=0; i<n; i++) {
+    for (int i=1; i<=n; i++) {
         x=a+h*i;
         s+=expr(x);
 
