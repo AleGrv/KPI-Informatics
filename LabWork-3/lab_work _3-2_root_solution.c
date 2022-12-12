@@ -102,7 +102,7 @@ bsect_mtd(A, X, Y, B, eps, Xn, Xl, Xr, dX, N, i, sgn_xl, sgn_x, dbg_mod);
 
 time_t t_stop=time(NULL);
 t_res=t_stop-t_start;
-printf("\n\tProgram execution time: %d sec", t_res);
+printf("\n\tProgram execution time: %u sec", t_res);
 printf("\n\n\tPress 'e' to Exit or ... Other key to Continue... ");
 e_chr = getch();
 if (e_chr == 'e') exit(1);
